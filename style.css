@@ -431,3 +431,29 @@ footer {
   }
 
 }
+.under-construction {
+  max-width: 760px;
+  margin: 28px auto 30px;
+  padding: 24px 30px;
+
+  background: rgba(255, 255, 255, 0.92);
+  border: 3px dashed #ff4fa3;
+  border-radius: 24px;
+
+  color: #222;
+  text-align: center;
+  line-height: 1.6;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+}
+
+.under-construction h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  color: #ff2f92;
+}
+
+.under-construction p {
+  margin: 8px 0;
+  font-size: 16px;
+}
