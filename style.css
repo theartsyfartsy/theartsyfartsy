@@ -352,33 +352,27 @@ body {
 }
 
 .gallery-grid {
-  max-width: 1300px;
+  max-width: 1100px;
 
   margin:
-    55px auto 0;
+    45px auto 0;
 
   display: grid;
 
   grid-template-columns:
-    repeat(4, 1fr);
+    repeat(4, minmax(0, 220px));
+  justify-content; center;
 
   gap: 18px;
 }
 
-.gallery-placeholder {
+.gallery-photo {
+  width: 100%;
   aspect-ratio: 4 / 5;
-
-  background: #eee5da;
-
+  object-fit: cover;
   border-radius: 25px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  color: #8d857d;
+  display: block;
+}
 }
 
 
@@ -506,10 +500,4 @@ footer {
 
 }
 
-.gallery-photo {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: 25px;
-  display: block;
-}
+
