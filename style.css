@@ -499,9 +499,11 @@ footer {
 
 }
 
-  object-fit: cover;
-  border-radius: 25px;
-  display: block;
+   footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
 }
 
 .gallery-photo {
@@ -510,5 +512,4 @@ footer {
   object-fit: cover;
   border-radius: 25px;
   display: block;
-}
 }
