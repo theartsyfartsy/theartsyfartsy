@@ -496,5 +496,11 @@ footer {
 
     text-align: center;
   }
-
+.gallery-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 25px;
+  display: block;
+}
 }
