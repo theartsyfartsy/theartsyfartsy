@@ -19,7 +19,6 @@ body {
 }
 
 
-
 /* HEADER */
 
 .site-header {
@@ -96,21 +95,25 @@ body {
   font-size: 14px;
 }
 
-.tagline {
-  font-size: clamp(20px, 3vw, 30px);
-  line-height: 1.4;
-  margin: 0 0 30px;
 
-  background: rgba(255, 255, 255, 0.82);
-  padding: 12px 25px;
-  border-radius: 100px;
-}
+/* TAGLINE */
 
 .tagline {
   font-family: "Codystar", sans-serif;
+
   font-size: 27px;
+
   font-weight: 500;
+
   line-height: 1.35;
+
+  margin: 0 0 30px;
+
+  background: rgba(255, 255, 255, 0.82);
+
+  padding: 12px 25px;
+
+  border-radius: 100px;
 }
 
 
@@ -118,15 +121,21 @@ body {
 
 .hero {
   min-height: 88vh;
+
   padding: 65px 20px 90px;
 
   display: flex;
+
   flex-direction: column;
+
   justify-content: center;
+
   align-items: center;
+
   text-align: center;
 
   position: relative;
+
   overflow: hidden;
 
   background:
@@ -148,24 +157,36 @@ body {
 
 .hero-logo {
   width: min(590px, 82vw);
+
   height: auto;
+
   display: block;
+
   margin-bottom: 25px;
 
-  filter: drop-shadow(0 5px 3px rgba(255,255,255,.35));
+  filter: drop-shadow(
+    0 5px 3px rgba(255, 255, 255, 0.35)
+  );
 }
+
+
+/* UNDER CONSTRUCTION */
 
 .under-construction {
   width: min(760px, 92%);
+
   margin: 0 auto 24px;
+
   padding: 24px 30px;
 
   background: rgba(255, 255, 255, 0.92);
 
   border: 3px dashed #ff4f87;
+
   border-radius: 25px;
 
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.10);
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.10);
 
   color: #232323;
 }
@@ -184,13 +205,18 @@ body {
   margin: 8px auto;
 
   font-size: 16px;
+
   line-height: 1.6;
 }
+
+
+/* MAIN BUTTON */
 
 .main-button {
   display: inline-block;
 
   background: #222;
+
   color: white;
 
   padding: 14px 26px;
@@ -200,6 +226,7 @@ body {
   text-decoration: none;
 
   font-size: 15px;
+
   font-weight: 700;
 }
 
@@ -257,7 +284,6 @@ body {
 
   line-height: 1.7;
 }
-
 
 
 /* SERVICES */
@@ -340,7 +366,6 @@ body {
 }
 
 
-
 /* GALLERY */
 
 .gallery {
@@ -361,20 +386,26 @@ body {
 
   grid-template-columns:
     repeat(4, minmax(0, 220px));
-  justify-content; center;
 
-  gap: 18px;
+  justify-content: center;
+
+  gap: 20px;
 }
 
 .gallery-photo {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: 25px;
-  display: block;
-}
-}
 
+  aspect-ratio: 4 / 5;
+
+  object-fit: cover;
+
+  border-radius: 25px;
+
+  display: block;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.08);
+}
 
 
 /* CONTACT */
@@ -410,7 +441,6 @@ body {
 }
 
 
-
 /* FOOTER */
 
 footer {
@@ -428,7 +458,6 @@ footer {
 
   font-size: 14px;
 }
-
 
 
 /* MOBILE */
@@ -455,6 +484,7 @@ footer {
 
   .under-construction {
     width: 94%;
+
     padding: 20px 18px;
   }
 
@@ -482,7 +512,9 @@ footer {
 
   .gallery-grid {
     grid-template-columns:
-      repeat(2, 1fr);
+      repeat(2, minmax(0, 1fr));
+
+    max-width: 520px;
   }
 
   footer {
@@ -493,11 +525,12 @@ footer {
 
 }
 
-   footer {
-    flex-direction: column;
-    text-align: center;
+@media (max-width: 500px) {
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 280px;
   }
 
 }
-
-
