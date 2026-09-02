@@ -408,7 +408,7 @@ body {
 }
 
 #facepainting-gallery .gallery-photo {
-  object-position: center center;
+  object-position: center 40%;
 }
 
 /* CONTACT */
