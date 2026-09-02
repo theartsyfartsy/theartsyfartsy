@@ -315,12 +315,20 @@ body {
   position: relative;
 }
 
-.service-card:nth-child(1) {
+#face-painting {
   background: #f6d7da;
 }
 
-.service-card:nth-child(2) {
+#embroidery {
   background: #dce9df;
+}
+
+#metal-stamping {
+  background: #f4dfb8;
+}
+
+#wood-burning {
+  background: #d9c7b8;
 }
 
 .service-number {
