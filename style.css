@@ -407,6 +407,9 @@ body {
     0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
+#facepainting-gallery .gallery-photo {
+  object-position: center center;
+}
 
 /* CONTACT */
 
