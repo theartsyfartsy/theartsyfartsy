@@ -289,13 +289,13 @@ body {
 /* SERVICES */
 
 .services {
-  max-width: 1300px;
+  max-width: 1000px;
 
-  margin: auto;
+  margin: 0 auto;
 
   padding:
-    50px 6%
-    120px;
+    45px 6%
+    70px;
 
   display: grid;
 
@@ -303,6 +303,7 @@ body {
     repeat(2, 1fr);
 
   gap: 28px;
+  justify-content: center;
 }
 
 .service-card {
@@ -312,7 +313,7 @@ body {
 
   padding: 55px;
 
-  position: relative;
+  position: center;
 }
 
 #face-painting {
@@ -336,7 +337,7 @@ body {
 
   letter-spacing: 2px;
 
-  margin-bottom: 65px;
+  margin-bottom: 20px;
 }
 
 .service-card h2 {
@@ -348,7 +349,7 @@ body {
     );
 
   margin:
-    0 0 20px;
+    0 0 16px;
 
   line-height: 1;
 }
