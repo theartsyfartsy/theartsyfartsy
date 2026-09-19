@@ -428,3 +428,254 @@ footer {
   .gallery-grid { max-width: 280px; }
   .gallery-photo { width: 280px; max-width: 100%; }
 }
+/* ========================================
+
+   CONTACT SECTION
+
+======================================== */
+
+.contact {
+
+  padding: 80px 24px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+
+}
+
+.contact .eyebrow {
+
+  margin: 0 0 12px;
+
+  color: #ff1493;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+}
+
+.contact h2 {
+
+  margin: 0 0 20px;
+
+  color: #111111;
+
+  font-size: clamp(36px, 6vw, 64px);
+
+  font-weight: 900;
+
+  line-height: 1.05;
+
+}
+
+.contact > p:not(.eyebrow):not(.email-option) {
+
+  margin: 0 auto 24px;
+
+  color: #333333;
+
+  font-size: 18px;
+
+  line-height: 1.6;
+
+}
+
+/* ========================================
+
+   AVAILABILITY BUTTON
+
+======================================== */
+
+.availability-button {
+
+  display: block;
+
+  width: fit-content;
+
+  max-width: 100%;
+
+  margin: 0 auto;
+
+  padding: 16px 30px;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+
+    135deg,
+
+    #ff1493 0%,
+
+    #9b27ff 50%,
+
+    #00bfff 100%
+
+  );
+
+  border: 3px solid #000000;
+
+  border-radius: 50px;
+
+  box-shadow: 5px 5px 0 #000000;
+
+  font-family: inherit;
+
+  font-size: 18px;
+
+  font-weight: 800;
+
+  line-height: 1.3;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+
+    transform 0.2s ease,
+
+    box-shadow 0.2s ease,
+
+    filter 0.2s ease;
+
+}
+
+.availability-button:hover {
+
+  transform: translate(3px, 3px);
+
+  box-shadow: 2px 2px 0 #000000;
+
+  filter: brightness(1.08);
+
+}
+
+.availability-button:active {
+
+  transform: translate(5px, 5px);
+
+  box-shadow: none;
+
+}
+
+.availability-button:focus-visible {
+
+  outline: 4px solid #ffdd00;
+
+  outline-offset: 5px;
+
+}
+
+/* ========================================
+
+   EMAIL OPTION
+
+======================================== */
+
+.contact .email-option {
+
+  margin: 28px 0 0;
+
+  color: #333333;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+}
+
+.contact .email-link {
+
+  color: #d60075;
+
+  font-weight: 800;
+
+  text-decoration: underline;
+
+  text-decoration-thickness: 2px;
+
+  text-underline-offset: 4px;
+
+  transition: color 0.2s ease;
+
+}
+
+.contact .email-link:hover {
+
+  color: #7928ca;
+
+}
+
+.contact .email-link:focus-visible {
+
+  outline: 3px solid #ffdd00;
+
+  outline-offset: 3px;
+
+  border-radius: 3px;
+
+}
+
+/* ========================================
+
+   MOBILE
+
+======================================== */
+
+@media (max-width: 600px) {
+
+  .contact {
+
+    padding: 60px 20px;
+
+  }
+
+  .contact h2 {
+
+    font-size: 40px;
+
+  }
+
+  .contact > p:not(.eyebrow):not(.email-option) {
+
+    font-size: 16px;
+
+  }
+
+  .availability-button {
+
+    width: 100%;
+
+    padding: 16px 18px;
+
+    font-size: 16px;
+
+  }
+
+  .contact .email-option {
+
+    margin-top: 24px;
+
+    font-size: 15px;
+
+  }
+
+  .contact .email-link {
+
+    display: block;
+
+    width: fit-content;
+
+    margin: 4px auto 0;
+
+    overflow-wrap: anywhere;
+    }
+    }
