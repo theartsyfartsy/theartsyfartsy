@@ -679,62 +679,67 @@ footer {
     overflow-wrap: anywhere;
     }
     }
-    /* ========================================
-   SOCIAL MEDIA SECTION
+  /* ========================================
+   ARTSY FARTSY SOCIAL SECTION
 ======================================== */
 
-.social-section {
+.contact .social-section {
+  display: block;
   width: min(720px, 100%);
   margin: 55px auto 0;
-  padding: 38px 30px;
+  padding: 38px 28px;
+  color: #222;
 
   background:
     radial-gradient(
       circle at top left,
-      rgba(255, 79, 135, 0.25),
-      transparent 38%
+      rgba(255, 20, 147, 0.22),
+      transparent 42%
     ),
     radial-gradient(
       circle at bottom right,
-      rgba(0, 199, 199, 0.25),
-      transparent 38%
+      rgba(0, 191, 255, 0.22),
+      transparent 42%
     ),
-    rgba(255, 255, 255, 0.72);
+    #ffffff;
 
-  border: 3px solid #222222;
+  border: 4px solid #222;
   border-radius: 35px;
   box-shadow:
-    7px 7px 0 #ff4f87,
+    7px 7px 0 #ff1493,
     12px 12px 0 #ffd447;
 
   text-align: center;
 }
 
-.social-eyebrow {
-  margin: 0 0 10px !important;
-  color: #d92469;
-  font-size: 12px !important;
+.contact .social-section .social-eyebrow {
+  display: block;
+  margin: 0 0 10px;
+  color: #e6007e;
+  font-size: 13px;
   font-weight: 900;
   letter-spacing: 3px;
 }
 
-.social-section h3 {
+.contact .social-section h3 {
+  display: block;
   margin: 0 0 14px;
-  color: #222222;
-  font-size: clamp(28px, 5vw, 43px);
+  color: #111;
+  font-size: clamp(29px, 5vw, 43px);
   font-weight: 900;
-  line-height: 1.05;
+  line-height: 1.1;
 }
 
-.social-copy {
+.contact .social-section .social-copy {
+  display: block;
   max-width: 580px;
-  margin: 0 auto !important;
-  color: #333333;
-  font-size: 16px !important;
+  margin: 0 auto;
+  color: #333;
+  font-size: 16px;
   line-height: 1.6;
 }
 
-.social-links {
+.contact .social-links {
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -743,19 +748,19 @@ footer {
   margin-top: 28px;
 }
 
-.social-button {
+.contact .social-button {
   display: flex;
   align-items: center;
   gap: 14px;
-
   min-width: 245px;
   padding: 17px 24px;
 
-  color: #ffffff;
-  border: 3px solid #222222;
+  color: #ffffff !important;
+  border: 3px solid #111;
   border-radius: 22px;
-  box-shadow: 5px 5px 0 #222222;
+  box-shadow: 5px 5px 0 #111;
 
+  font-size: 18px;
   text-align: left;
   text-decoration: none;
 
@@ -765,21 +770,24 @@ footer {
     filter 0.2s ease;
 }
 
-.facebook-button {
-  background: linear-gradient(135deg, #1877f2, #735cff);
+.contact .facebook-button {
+  background: linear-gradient(
+    135deg,
+    #1877f2,
+    #644cff
+  ) !important;
 }
 
-.instagram-button {
+.contact .instagram-button {
   background: linear-gradient(
     135deg,
     #833ab4,
-    #e1306c,
-    #fd8d32,
-    #fcb045
-  );
+    #e1306c 45%,
+    #fd8d32 100%
+  ) !important;
 }
 
-.social-icon {
+.contact .social-icon {
   display: flex;
   flex: 0 0 48px;
   justify-content: center;
@@ -788,9 +796,9 @@ footer {
   width: 48px;
   height: 48px;
 
-  background: rgba(255, 255, 255, 0.95);
-  color: #222222;
-  border: 2px solid #222222;
+  background: #ffffff;
+  color: #111 !important;
+  border: 2px solid #111;
   border-radius: 50%;
 
   font-size: 27px;
@@ -798,56 +806,45 @@ footer {
   line-height: 1;
 }
 
-.social-button-text {
-  display: flex;
+.contact .social-button-text {
+  display: flex !important;
   flex-direction: column;
-  font-size: 21px;
+  color: #ffffff !important;
+  font-size: 21px !important;
   font-weight: 900;
   line-height: 1.1;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
-.social-button-text small {
+.contact .social-button-text small {
+  display: block;
   margin-bottom: 4px;
-  font-size: 10px;
+  color: #ffffff !important;
+  font-size: 10px !important;
   font-weight: 800;
   letter-spacing: 1.6px;
 }
 
-.social-button:hover {
+.contact .social-button:hover {
   transform: translate(3px, 3px);
-  box-shadow: 2px 2px 0 #222222;
-  filter: brightness(1.07);
+  box-shadow: 2px 2px 0 #111;
+  filter: brightness(1.08);
 }
-
-.social-button:active {
-  transform: translate(5px, 5px);
-  box-shadow: none;
-}
-
-.social-button:focus-visible {
-  outline: 4px solid #ffffff;
-  outline-offset: 5px;
-}
-
-
-/* MOBILE SOCIAL SECTION */
 
 @media (max-width: 600px) {
-  .social-section {
+  .contact .social-section {
     margin-top: 45px;
     padding: 32px 18px;
     border-radius: 28px;
-    box-shadow:
-      5px 5px 0 #ff4f87,
-      9px 9px 0 #ffd447;
   }
 
-  .social-links {
+  .contact .social-links {
     flex-direction: column;
     align-items: center;
   }
 
-  .social-button {
+  .contact .social-button {
     width: 100%;
     min-width: 0;
   }
